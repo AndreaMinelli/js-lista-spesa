@@ -10,3 +10,16 @@ const expense = document.getElementById("expense");
 
 //Creo array
 const toBuy = ["uova", "latte", "formaggio", "pane"];
+
+let listItem = "";
+
+let i = 0;
+
+while (i < toBuy.length) {
+  listItem += `<li>${toBuy[i]}</li>`;
+  i++;
+}
+
+const list = `<ul>${listItem}</ul>`;
+
+expense.innerHTML = list;
